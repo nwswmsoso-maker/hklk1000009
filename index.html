@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+
+<title>منصة غير جوك TV لايف | شاهد البث المباشر بدون حدود</title>
+<meta name="description" content="منصة غير جوك TV لايف تخليك تشاهد البث المباشر والقنوات العراقية والعربية بضغطة وحدة، بجودة عالية وسرعة فائقة، تجربة مشاهدة مختلفة كل يوم." />
+<meta name="keywords" content="غير جوك TV لايف, بث مباشر, قنوات عراقية, مشاهدة لايف, منصة عراقية, تطبيق مشاهدة مباشر" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="theme-color" content="#060103" />
+
+<link rel="icon" type="image/jpeg" href="/cover.jpg?v=2">
+<link rel="apple-touch-icon" href="/cover.jpg?v=2">
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ar_IQ">
+<meta property="og:site_name" content="منصة غير جوك TV لايف">
+<meta property="og:title" content="منصة غير جوك TV لايف | شاهد البث المباشر بدون حدود">
+<meta property="og:description" content="بث مباشر، قنوات، وجودة عالية بمكان وحد. جرب منصة غير جوك TV لايف الحين.">
+<meta property="og:image" content="/cover.jpg?v=2">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "منصة غير جوك TV لايف",
+  "applicationCategory": "EntertainmentApplication",
+  "operatingSystem": "Android, iOS, Web",
+  "inLanguage": "ar-IQ",
+  "image": "/cover.jpg?v=2",
+  "description": "منصة عراقية لمشاهدة البث المباشر والقنوات بواجهة سهلة وسريعة.",
+  "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.8", "ratingCount": "2,430" }
+}
+</script>
+
+<style>
+  :root{
+    --black-1:#040002;
+    --black-2:#0c0206;
+    --black-3:#14040a;
+    --pink:#ff2d75;
+    --pink-2:#b3004f;
+    --pink-light:#ff8fb8;
+    --line:rgba(255,45,117,.22);
+    --text:#fbeef3;
+    --muted:#b98ea0;
+    --gold:#ffc94a;
+    --shadow:0 20px 50px rgba(0,0,0,.6);
+  }
+
+  *{ box-sizing:border-box; margin:0; padding:0; }
+  html{ scroll-behavior:smooth; }
+
+  body{
+    font-family:"Cairo",sans-serif;
+    color:var(--text);
+    background:var(--black-1);
+    max-width:520px;
+    margin:0 auto;
+    min-height:100vh;
+    padding-bottom:90px;
+    position:relative;
+    overflow-x:hidden;
+  }
+
+  a{ text-decoration:none; color:inherit; }
+  img{ display:block; max-width:100%; }
+  .container{ width:90%; margin:auto; }
+
+  /* ===== HEADER: مختلف - شريط علوي ضيق + اسم مع خط نيون تحته ===== */
+  .topbar{
+    padding:16px 0;
+    text-align:center;
+    border-bottom:1px solid var(--line);
+    background:linear-gradient(180deg, rgba(255,45,117,.08), transparent);
+  }
+
+  .topbar .logo-mark{
+    width:54px; height:54px;
+    margin:0 auto 8px;
+    border-radius:50%;
+    overflow:hidden;
+    border:2px solid var(--pink);
+    box-shadow:0 0 24px rgba(255,45,117,.55);
+  }
+
+  .topbar h1{
+    font-size:19px;
+    font-weight:900;
+    letter-spacing:.5px;
+  }
+
+  .topbar .neon-line{
+    width:60px;
+    height:3px;
+    margin:8px auto 0;
+    border-radius:99px;
+    background:linear-gradient(90deg,var(--pink),var(--gold));
+  }
+
+  /* ===== HERO: عمودي، نص بالوسط، خلفية بقع ضوئية ===== */
+  .hero{
+    padding:40px 0 20px;
+    text-align:center;
+    position:relative;
+  }
+
+  .hero::before{
+    content:"";
+    position:absolute;
+    top:-60px; left:50%;
+    transform:translateX(-50%);
+    width:340px; height:340px;
+    background:radial-gradient(circle, rgba(255,45,117,.35), transparent 65%);
+    filter:blur(10px);
+    z-index:-1;
+  }
+
+  .live-tag{
+    display:inline-flex;
+    align-items:center;
+    gap:6px;
+    background:rgba(255,45,117,.14);
+    border:1px solid var(--pink);
+    color:var(--pink-light);
+    padding:6px 14px;
+    border-radius:999px;
+    font-size:12px;
+    font-weight:900;
+  }
+
+  .live-dot{
+    width:7px; height:7px;
+    border-radius:50%;
+    background:#ff2d75;
+    box-shadow:0 0 8px #ff2d75;
+    animation:blink 1.4s infinite;
+  }
+
+  @keyframes blink{ 50%{ opacity:.3; } }
+
+  .hero h2{
+    font-size:32px;
+    line-height:1.25;
+    margin:18px 0 10px;
+    font-weight:900;
+  }
+
+  .hero h2 em{
+    font-style:normal;
+    background:linear-gradient(90deg,var(--pink-light),var(--gold));
+    -webkit-background-clip:text;
+    background-clip:text;
+    color:transparent;
+  }
+
+  .hero p{
+    color:var(--muted);
+    font-size:14.5px;
+    max-width:380px;
+    margin:0 auto;
+  }
+
+  .hero-rating{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    margin-top:18px;
+    background:rgba(255,255,255,.04);
+    border:1px solid var(--line);
+    border-radius:999px;
+    padding:8px 16px;
+  }
+
+  .hero-rating .stars{ color:var(--gold); font-size:14px; }
+  .hero-rating span.num{ font-weight:900; color:var(--gold); }
+  .hero-rating span.cnt{ color:var(--muted); font-size:12px; }
+
+  /* ===== ZIGZAG SCREENS: عرض شاشات بشكل متعرج بدل هاتف واحد ===== */
+  .screens{
+    display:flex;
+    gap:14px;
+    margin:30px 0 10px;
+    overflow-x:auto;
+    padding:6px 4px 16px;
+    scroll-snap-type:x mandatory;
+  }
+
+  .screens::-webkit-scrollbar{ display:none; }
+
+  .screen-card{
+    min-width:150px;
+    scroll-snap-align:start;
+    border-radius:20px;
+    overflow:hidden;
+    border:1px solid var(--line);
+    box-shadow:var(--shadow);
+    position:relative;
+  }
+
+  .screen-card:nth-child(2){ margin-top:18px; }
+  .screen-card:nth-child(3){ margin-top:-6px; }
+
+  .screen-card img{
+    width:100%;
+    aspect-ratio:9/16;
+    object-fit:cover;
+  }
+
+  .screen-card .badge{
+    position:absolute;
+    top:8px; right:8px;
+    background:rgba(4,0,2,.7);
+    border:1px solid var(--pink);
+    color:#fff;
+    font-size:10px;
+    font-weight:800;
+    padding:4px 8px;
+    border-radius:999px;
+  }
+
+  /* ===== STICKY CTA BAR ===== */
+  .cta-fixed{
+    position:fixed;
+    bottom:0; left:0; right:0;
+    z-index:999;
+    max-width:520px;
+    margin:auto;
+    background:linear-gradient(180deg, transparent, rgba(4,0,2,.96) 30%);
+    padding:30px 18px 16px;
+  }
+
+  .btn-main{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+    width:100%;
+    padding:17px;
+    border-radius:18px;
+    font-size:17px;
+    font-weight:900;
+    color:#fff;
+    background:linear-gradient(135deg,var(--pink),var(--pink-2));
+    box-shadow:0 16px 36px rgba(255,45,117,.45);
+    position:relative;
+    overflow:hidden;
+    border:1px solid rgba(255,255,255,.15);
+  }
+
+  .btn-main::after{
+    content:"";
+    position:absolute; top:0; right:-120%;
+    width:50%; height:100%;
+    transform:skewX(-20deg);
+    background:linear-gradient(90deg,transparent,rgba(255,255,255,.3),transparent);
+    animation:shine 2.8s infinite;
+  }
+
+  @keyframes shine{
+    0%{ right:-120%; }
+    50%{ right:140%; }
+    100%{ right:140%; }
+  }
+
+  /* ===== TICKER: شريط متحرك للمميزات ===== */
+  .ticker-wrap{
+    overflow:hidden;
+    border-top:1px solid var(--line);
+    border-bottom:1px solid var(--line);
+    padding:12px 0;
+    margin-top:24px;
+    background:rgba(255,45,117,.05);
+  }
+
+  .ticker{
+    display:flex;
+    gap:28px;
+    white-space:nowrap;
+    animation:scrollTicker 18s linear infinite;
+    width:max-content;
+  }
+
+  .ticker span{
+    font-size:13px;
+    font-weight:800;
+    color:var(--pink-light);
+  }
+
+  @keyframes scrollTicker{
+    0%{ transform:translateX(0); }
+    100%{ transform:translateX(-50%); }
+  }
+
+  /* ===== FEATURES: بطاقات أفقية مرقمة ===== */
+  section{ padding:40px 0; }
+
+  .sec-title{
+    font-size:22px;
+    font-weight:900;
+    margin-bottom:6px;
+  }
+
+  .sec-sub{
+    color:var(--muted);
+    font-size:13.5px;
+    margin-bottom:20px;
+  }
+
+  .feat-row{
+    display:flex;
+    align-items:flex-start;
+    gap:14px;
+    padding:16px 0;
+    border-bottom:1px solid var(--line);
+  }
+
+  .feat-row:last-child{ border-bottom:none; }
+
+  .feat-num{
+    font-size:26px;
+    font-weight:900;
+    color:transparent;
+    -webkit-text-stroke:1.4px var(--pink);
+    min-width:38px;
+  }
+
+  .feat-row h3{ font-size:15.5px; font-weight:800; margin-bottom:4px; }
+  .feat-row p{ color:var(--muted); font-size:13px; }
+
+  /* ===== RATINGS: دائرة كبيرة + بارات ===== */
+  .rating-block{
+    display:flex;
+    align-items:center;
+    gap:18px;
+    background:rgba(255,255,255,.03);
+    border:1px solid var(--line);
+    border-radius:22px;
+    padding:20px;
+  }
+
+  .rating-circle{
+    width:88px; height:88px;
+    border-radius:50%;
+    background:conic-gradient(var(--pink) 0% 96%, rgba(255,255,255,.08) 96% 100%);
+    display:grid;
+    place-items:center;
+    flex-shrink:0;
+  }
+
+  .rating-circle-inner{
+    width:70px; height:70px;
+    border-radius:50%;
+    background:var(--black-2);
+    display:grid;
+    place-items:center;
+    text-align:center;
+  }
+
+  .rating-circle-inner b{ font-size:20px; color:var(--gold); display:block; line-height:1; }
+  .rating-circle-inner small{ font-size:9px; color:var(--muted); }
+
+  .rating-bars2{ flex:1; display:grid; gap:5px; }
+
+  .rbar-row{ display:flex; align-items:center; gap:6px; font-size:10.5px; color:var(--muted); }
+  .rbar-track{ flex:1; height:6px; border-radius:99px; background:rgba(255,255,255,.07); overflow:hidden; }
+  .rbar-fill{ height:100%; background:linear-gradient(90deg,var(--pink),var(--gold)); }
+
+  /* ===== REVIEW CARDS: شكل شهادة/كارت بطاقة ===== */
+  .review-stack{
+    display:grid;
+    gap:12px;
+    margin-top:18px;
+  }
+
+  .rcard{
+    background:linear-gradient(135deg, rgba(255,45,117,.08), rgba(255,255,255,.02));
+    border:1px solid var(--line);
+    border-radius:18px;
+    padding:16px;
+  }
+
+  .rcard-head{ display:flex; align-items:center; gap:10px; margin-bottom:8px; }
+
+  .rcard-avatar{
+    width:34px; height:34px;
+    border-radius:50%;
+    background:linear-gradient(135deg,var(--pink),var(--gold));
+    display:grid; place-items:center;
+    font-weight:900;
+    font-size:13px;
+    color:#1a0510;
+  }
+
+  .rcard-name{ font-size:13px; font-weight:800; }
+  .rcard-stars{ color:var(--gold); font-size:11px; }
+
+  .rcard p{ font-size:13.5px; color:#eedbe4; }
+
+  /* ===== FAQ: أكورديون بخط جانبي ===== */
+  .faq2{ display:grid; gap:10px; }
+
+  details{
+    border-right:3px solid var(--pink);
+    background:rgba(255,255,255,.03);
+    border-radius:0 14px 14px 0;
+    padding:14px 16px;
+  }
+
+  summary{ list-style:none; cursor:pointer; font-size:14.5px; font-weight:800; }
+  summary::-webkit-details-marker{ display:none; }
+  details p{ color:var(--muted); margin-top:8px; font-size:13px; }
+
+  footer{
+    text-align:center;
+    padding:30px 0 20px;
+    border-top:1px solid var(--line);
+  }
+  footer p{ color:var(--muted); font-size:12px; margin-top:4px; }
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="logo-mark"><img src="/cover.jpg?v=2" alt="شعار منصة غير جوك TV لايف"></div>
+  <h1>منصة غير جوك TV لايف</h1>
+  <div class="neon-line"></div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="container">
+      <span class="live-tag"><span class="live-dot"></span> بث مباشر الحين</span>
+
+      <h2>شاهد كلشي <em>بدون حدود</em></h2>
+      <p>منصة عراقية تجمع القنوات والبث المباشر بمكان وحد، بجودة عالية وسرعة فائقة.</p>
+
+      <div class="hero-rating">
+        <span class="stars">★★★★★</span>
+        <span class="num">4.8</span>
+        <span class="cnt">(2,430 تقييم)</span>
+      </div>
+
+      <div class="screens">
+        <div class="screen-card">
+          <img src="/cover.jpg?v=2" alt="شاشة منصة غير جوك TV لايف 1">
+          <span class="badge">لايف</span>
+        </div>
+        <div class="screen-card">
+          <img src="/cover.jpg?v=2" alt="شاشة منصة غير جوك TV لايف 2">
+          <span class="badge">قنوات</span>
+        </div>
+        <div class="screen-card">
+          <img src="/cover.jpg?v=2" alt="شاشة منصة غير جوك TV لايف 3">
+          <span class="badge">HD</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="ticker-wrap">
+    <div class="ticker">
+      <span>★ بث مباشر بجودة HD</span>
+      <span>★ قنوات عراقية وعربية</span>
+      <span>★ تقييم 4.8 من 5</span>
+      <span>★ تحميل سريع</span>
+      <span>★ واجهة سهلة</span>
+      <span>★ بث مباشر بجودة HD</span>
+      <span>★ قنوات عراقية وعربية</span>
+      <span>★ تقييم 4.8 من 5</span>
+      <span>★ تحميل سريع</span>
+      <span>★ واجهة سهلة</span>
+    </div>
+  </div>
+
+  <section>
+    <div class="container">
+      <div class="sec-title">ليش غير جوك TV لايف؟</div>
+      <div class="sec-sub">كل شي مرتب حتى توصل للمحتوى اللي تريده بأسرع وقت.</div>
+
+      <div class="feat-row">
+        <div class="feat-num">01</div>
+        <div>
+          <h3>بث مباشر بدون تقطيع</h3>
+          <p>جودة عالية وثبات بالبث حتى بأضعف نت.</p>
+        </div>
+      </div>
+
+      <div class="feat-row">
+        <div class="feat-num">02</div>
+        <div>
+          <h3>كل القنوات بمكان وحد</h3>
+          <p>ماكو تنقل بين تطبيقات، كل شي مجمّع وقريب من إيدك.</p>
+        </div>
+      </div>
+
+      <div class="feat-row">
+        <div class="feat-num">03</div>
+        <div>
+          <h3>واجهة سريعة وخفيفة</h3>
+          <p>تصميم مخصص للهاتف يفتح بسرعة وما يستهلك بيانات زايدة.</p>
+        </div>
+      </div>
+
+      <div class="feat-row">
+        <div class="feat-num">04</div>
+        <div>
+          <h3>تحديث مستمر</h3>
+          <p>محتوى جديد وقنوات إضافية تنضاف بشكل دوري.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="sec-title">تقييمات المستخدمين</div>
+      <div class="sec-sub">آراء حقيقية من مستخدمين المنصة.</div>
+
+      <div class="rating-block">
+        <div class="rating-circle">
+          <div class="rating-circle-inner">
+            <b>4.8</b>
+            <small>من 5</small>
+          </div>
+        </div>
+        <div class="rating-bars2">
+          <div class="rbar-row"><span>5★</span><div class="rbar-track"><div class="rbar-fill" style="width:82%"></div></div><span>82%</span></div>
+          <div class="rbar-row"><span>4★</span><div class="rbar-track"><div class="rbar-fill" style="width:12%"></div></div><span>12%</span></div>
+          <div class="rbar-row"><span>3★</span><div class="rbar-track"><div class="rbar-fill" style="width:4%"></div></div><span>4%</span></div>
+          <div class="rbar-row"><span>2★</span><div class="rbar-track"><div class="rbar-fill" style="width:1%"></div></div><span>1%</span></div>
+          <div class="rbar-row"><span>1★</span><div class="rbar-track"><div class="rbar-fill" style="width:1%"></div></div><span>1%</span></div>
+        </div>
+      </div>
+
+      <div class="review-stack">
+        <div class="rcard">
+          <div class="rcard-head">
+            <div class="rcard-avatar">ب</div>
+            <div>
+              <div class="rcard-name">مستخدم من بغداد</div>
+              <div class="rcard-stars">★★★★★</div>
+            </div>
+          </div>
+          <p>البث ما يتقطع، والواجهة سريعة وسهلة الاستخدام.</p>
+        </div>
+
+        <div class="rcard">
+          <div class="rcard-head">
+            <div class="rcard-avatar">ب</div>
+            <div>
+              <div class="rcard-name">مستخدمة من البصرة</div>
+              <div class="rcard-stars">★★★★★</div>
+            </div>
+          </div>
+          <p>أحسن منصة جربتها للقنوات العراقية، كل شي مرتب.</p>
+        </div>
+
+        <div class="rcard">
+          <div class="rcard-head">
+            <div class="rcard-avatar">ن</div>
+            <div>
+              <div class="rcard-name">مستخدم من النجف</div>
+              <div class="rcard-stars">★★★★☆</div>
+            </div>
+          </div>
+          <p>جودة البث ممتازة والتصميم يفتح النفس.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="sec-title">أسئلة شائعة</div>
+      <div class="sec-sub">إجابات سريعة على أكثر الأسئلة تكرارًا.</div>
+
+      <div class="faq2">
+        <details open>
+          <summary>شنو هي منصة غير جوك TV لايف؟</summary>
+          <p>منصة عراقية لمشاهدة البث المباشر والقنوات بواجهة حديثة وسريعة.</p>
+        </details>
+
+        <details>
+          <summary>هل المنصة مهيأة للموبايل؟</summary>
+          <p>نعم، التصميم مبني بالكامل لتجربة الهاتف بأفضل شكل وأسرع تحميل.</p>
+        </details>
+
+        <details>
+          <summary>شنو متوسط تقييم المنصة؟</summary>
+          <p>المنصة حاصلة على تقييم 4.8 من 5 بناءً على أكثر من 2,400 مستخدم.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    <p><strong>منصة غير جوك TV لايف</strong> — شاهد البث المباشر بدون حدود</p>
+    <p>تصميم مخصص للموبايل بهوية أسود ووردي غامق.</p>
+  </div>
+</footer>
+
+<div class="cta-fixed">
+  <a href="#" class="btn-main" aria-label="تحميل منصة غير جوك TV لايف">
+    <svg width="19" height="19" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+      <path d="M12 3V14M12 14L7.5 9.5M12 14L16.5 9.5M4 18.5H20" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    تحميل المنصة الآن
+  </a>
+</div>
+
+</body>
+</html>
